@@ -20,7 +20,7 @@ const statusOrder = [
         status:"Selesai",
         desc:"Pesanan telah telah berhasil sampai di kaks punya lokasi.",
         time:'-- : --',
-        completed:true
+        completed:false
     },
 ]
 
