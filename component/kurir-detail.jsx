@@ -3,8 +3,10 @@ import React from 'react'
 import { COLORS, FONTS } from '../lib/constant'
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
+import { useRouter } from 'expo-router';
 
 const KurirDetail = () => {
+  const route = useRouter()
   return (
     <View style={{width:'100%', flexDirection:'row', gap:10, paddingVertical:10,  justifyContent:'flex-start', overflow:'hidden', alignItems:'center', marginTop:20}} >
 
@@ -16,7 +18,7 @@ const KurirDetail = () => {
         <Text style={{fontFamily:FONTS.Medium, color:'gray'}}>Yamaha Mio M3</Text>
         <Text style={{fontFamily:FONTS.Medium, color:'gray'}}>DS 3345 AD</Text>
         <View style={{flexDirection:'row', gap:6}}>
-            <TouchableOpacity activeOpacity={.8} style={{width:90, paddingVertical:2,backgroundColor:'black', justifyContent:'center', alignItems:'center', borderRadius:10, flexDirection:'row', gap:5}}>
+            <TouchableOpacity onPress={() => route.push('/detail-kurir-screen')} activeOpacity={.8} style={{width:90, paddingVertical:2,backgroundColor:'black', justifyContent:'center', alignItems:'center', borderRadius:10, flexDirection:'row', gap:5}}>
                 <MaterialCommunityIcons name="account-details" size={15} color="white" />
                 <Text style={{fontFamily:FONTS.Light, color:'white'}}>Detail</Text>
             </TouchableOpacity>

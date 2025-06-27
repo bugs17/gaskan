@@ -6,7 +6,7 @@ import FontAwesome from '@expo/vector-icons/FontAwesome';
 import Orang from '../assets/images/orang3.png'
 import OrangMurung from '../assets/images/orang5.png'
 
-const jumlahKurir = 5
+const jumlahKurir = 12
 
 const CardKurirReady = () => {
   return (

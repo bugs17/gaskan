@@ -7,20 +7,20 @@ const statusOrder = [
     {
         status:"Pesanan di terima warung",
         desc:"Pesanan sudah di terima oleh warung.",
-        time:'17:20 WIT',
+        time:'17 : 20 WIT',
         completed:true
     },
     {
         status:"Kurir mulai pengantaran",
         desc:"Pesanan sedang di antar kurir ke kaks punya lokasi.",
-        time:'-- : --',
+        time:'17 : 30 WIT',
         completed:true
     },
     {
         status:"Selesai",
         desc:"Pesanan telah telah berhasil sampai di kaks punya lokasi.",
-        time:'-- : --',
-        completed:false
+        time:'17 : 40 WIT',
+        completed:true
     },
 ]
 

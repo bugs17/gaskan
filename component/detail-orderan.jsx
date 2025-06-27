@@ -6,13 +6,16 @@ import Devider from './devider-dashed';
 import KurirDetail from './kurir-detail';
 import { COLORS, FONTS } from '../lib/constant';
 import StepAndStatusOrder from './step-and-status-order';
+import { useRouter } from 'expo-router';
 
 const DeatailOrderan = () => {
     const {width, height} = Dimensions.get('screen')
+    const router = useRouter()
 
     const rows = 33
     const columns = 4
 
+    // ini watermark untuk struknya
     const renderWatermarks = () => {
         let elements = []
 
@@ -51,7 +54,8 @@ const DeatailOrderan = () => {
             <ItemOrdered />
             <ItemOrdered />
             <SubTotalDanOngkir />
-            <TouchableOpacity activeOpacity={.8} style={{width:90, paddingVertical:2,backgroundColor:'black', justifyContent:'center', alignItems:'center', borderRadius:10, flexDirection:'row', gap:5, alignSelf:'center'}}>
+
+            <TouchableOpacity onPress={() => router.push('/detail-orderan-screen')} activeOpacity={.8} style={{width:90, paddingVertical:2,backgroundColor:'black', justifyContent:'center', alignItems:'center', borderRadius:10, flexDirection:'row', gap:5, alignSelf:'center'}}>
                 <Text style={{fontFamily:FONTS.Light, color:'white'}}>Detail</Text>
             </TouchableOpacity>
             

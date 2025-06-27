@@ -18,7 +18,7 @@ const SubTotalDanOngkir = () => {
         <Text style={{fontFamily:FONTS.Medium, fontSize:13}}>Total bayar ke kurir:</Text>
       </View>
       <View style={{flex:1, alignItems:'flex-end'}}>
-        <Text style={{fontFamily:FONTS.SemiBold, color:COLORS.orange, fontSize:20}}>Rp.55.000</Text>
+        <Text style={{fontFamily:FONTS.SemiBold, color:COLORS.money, fontSize:20}}>Rp.55.000</Text>
       </View>
     </View>
 

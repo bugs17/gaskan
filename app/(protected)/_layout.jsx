@@ -16,7 +16,9 @@ const ProtectedLayout = () => {
         <Stack.Screen name='(tabs)' options={{
             headerShown:false,
         }} />
-        <Stack.Screen name='/riwayat-orderan' />
+        <Stack.Screen name='riwayat-orderan-list-screen' options={{headerShown:false}} />
+        <Stack.Screen name='detail-orderan-screen' options={{headerShown:false}} />
+        <Stack.Screen name='detail-kurir-screen' options={{headerShown:false}} />
     </Stack>
   )
 }

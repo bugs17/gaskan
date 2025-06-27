@@ -7,7 +7,7 @@ import { Link } from 'expo-router';
 
 const ButtonRiwayatOrderan = () => {
   return (
-    <Link href="/riwayat-orderan" asChild>
+    <Link href="/riwayat-orderan-list-screen" asChild>
         <TouchableOpacity activeOpacity={.8} style={{ marginRight: 20,  justifyContent:'center', alignItems: 'center' }}>
             <Ionicons name="receipt-outline" size={24} color={COLORS.buttondarkBlue} />
             <Text style={{fontFamily:FONTS.Light, color:COLORS.buttondarkBlue}}>Riwayat</Text>

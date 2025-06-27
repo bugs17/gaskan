@@ -9,7 +9,7 @@ const GreatingAndProfil = () => {
     <View style={{width:'100%', height:'auto', flexDirection:'row', justifyContent:'space-between', paddingHorizontal:20, alignItems:'center'}}>
           <Text style={{fontFamily:FONTS.SemiBold, fontSize:25, color:'white'}}>Hallo, Bugs 👋</Text>
           <Pressable style={{width:40, height:40, backgroundColor:COLORS.backgroundCardGray, borderRadius:20, justifyContent:'center', alignItems:'center'}}>
-            <FontAwesome name="user" size={24} color={COLORS.buttondarkBlue} />
+            <FontAwesome name="shopping-cart" size={24} color={COLORS.buttondarkBlue} />
           </Pressable>
         </View>
   )

@@ -51,6 +51,7 @@ const TabsLayout = () => {
               <Entypo name="home" size={24} color={color} />
             ),
         }} />
+        
         <Tabs.Screen name='pesanan' options={{
             headerTitleAlign:'left',
             headerTitleStyle:{
