@@ -3,7 +3,7 @@ import { View, Text, TouchableOpacity, Animated, Dimensions, Image } from 'react
 import { LinearGradient } from 'expo-linear-gradient';
 import { COLORS, FONTS } from '../lib/constant';
 
-const CardMakanan = ({title, picture}) => {
+const CardMakanan = ({title, picture, onPress}) => {
 
   const { width, height } = Dimensions.get('screen');
 
@@ -28,6 +28,7 @@ const CardMakanan = ({title, picture}) => {
 
   return (
     <TouchableOpacity
+        onPress={onPress}
         activeOpacity={0.8}
         style={{
             width: width / 3 - 10,

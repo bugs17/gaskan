@@ -22,13 +22,15 @@ const KurirDetail = () => {
                 <MaterialCommunityIcons name="account-details" size={15} color="white" />
                 <Text style={{fontFamily:FONTS.Light, color:'white'}}>Detail</Text>
             </TouchableOpacity>
-            <TouchableOpacity activeOpacity={.8} style={{width:90, paddingVertical:2,backgroundColor:COLORS.buttondarkBlue, justifyContent:'center', alignItems:'center', borderRadius:10, flexDirection:'row', gap:5}}>
+            <TouchableOpacity onPress={() => route.push('/lacak/kuririd7')} activeOpacity={.8} style={{width:90, paddingVertical:2,backgroundColor:COLORS.buttondarkBlue, justifyContent:'center', alignItems:'center', borderRadius:10, flexDirection:'row', gap:5}}>
                 <FontAwesome name="map-marker" size={15} color="white" />
                 <Text style={{fontFamily:FONTS.Light, color:'white'}}>Lacak</Text>
             </TouchableOpacity>
             
         </View>
+        
       </View>
+      
     </View>
   )
 }

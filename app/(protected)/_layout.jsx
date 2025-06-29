@@ -19,6 +19,9 @@ const ProtectedLayout = () => {
         <Stack.Screen name='riwayat-orderan-list-screen' options={{headerShown:false}} />
         <Stack.Screen name='detail-orderan-screen' options={{headerShown:false}} />
         <Stack.Screen name='detail-kurir-screen' options={{headerShown:false}} />
+        <Stack.Screen name='detail-riwayat-order-screen' options={{headerShown:false}} />
+        <Stack.Screen name='lacak' options={{headerShown:false}} />
+        <Stack.Screen name='semua-makanan-screen' options={{headerShown:false}} />
     </Stack>
   )
 }

@@ -7,6 +7,7 @@ import KurirDetail from './kurir-detail';
 import { COLORS, FONTS } from '../lib/constant';
 import StepAndStatusOrder from './step-and-status-order';
 import { useRouter } from 'expo-router';
+import { FontAwesome, Ionicons } from '@expo/vector-icons';
 
 const DeatailOrderan = () => {
     const {width, height} = Dimensions.get('screen')
@@ -63,6 +64,11 @@ const DeatailOrderan = () => {
                 
             <Text style={{fontFamily:FONTS.Bold, textAlign:'center', color:COLORS.buttondarkBlue}}>Kurir yang antar kaks punya pesanan.</Text>
             <KurirDetail />
+
+            <TouchableOpacity onPress={() => router.push('/chat')} activeOpacity={.8} style={{width:'100%',paddingVertical:4,marginTop:10,backgroundColor:'black', justifyContent:'center', alignItems:'center', borderRadius:10, flexDirection:'row', gap:5}}>
+                <Ionicons name="chatbubble-ellipses" size={15} color='white' />
+                <Text style={{fontFamily:FONTS.Light, color:'white'}}>Chat Kurir</Text>
+            </TouchableOpacity>
 
             <Devider />
 

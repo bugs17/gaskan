@@ -29,15 +29,15 @@ const CardKurirReady = () => {
         <View style={{height:'100%', width:'60%', paddingTop:20, paddingRight:4}}>
             <Text style={{color:'white', fontFamily:FONTS.SemiBold, fontSize:15}}>Jumlah Kurir Tersedia</Text>
             <Text style={{color:'white', fontFamily:FONTS.Bold, fontSize:20}}>{jumlahKurir} {jumlahKurir > 0 && "Siap Gas 😎"}</Text>
-            <View style={{flexDirection:'row', justifyContent:'space-around', marginTop:10 }}>
+            <View style={{flexDirection:'row', justifyContent:'flex-start', marginTop:10 }}>
                 <TouchableOpacity activeOpacity={.6} style={{paddingHorizontal:10, backgroundColor:COLORS.buttonRed, paddingVertical:5, borderRadius:5, justifyContent:'center', alignItems:'center', flexDirection:'row', gap:5}}>
                     <Feather name="refresh-cw" size={10} color="white" />
-                    <Text style={{color:'white', fontFamily:FONTS.Medium}}>Refresh</Text>
+                    {/* <Text style={{color:'white', fontFamily:FONTS.Medium}}>Refresh</Text> */}
                 </TouchableOpacity>
-                <TouchableOpacity activeOpacity={.6} style={{paddingHorizontal:10, backgroundColor:COLORS.buttonRed, paddingVertical:5, borderRadius:5, justifyContent:'center', alignItems:'center', flexDirection:'row', gap:5}}>
+                {/* <TouchableOpacity activeOpacity={.6} style={{paddingHorizontal:10, backgroundColor:COLORS.buttonRed, paddingVertical:5, borderRadius:5, justifyContent:'center', alignItems:'center', flexDirection:'row', gap:5}}>
                     <FontAwesome name="map-marker" size={10} color="white" />
                     <Text style={{color:'white', fontFamily:FONTS.Medium}}>Map View</Text>
-                </TouchableOpacity>
+                </TouchableOpacity> */}
             </View>
         </View>
 

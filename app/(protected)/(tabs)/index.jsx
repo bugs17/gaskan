@@ -12,15 +12,17 @@ import Makanan from '../../../assets/images/makanan.png';
 import Minuman from '../../../assets/images/minuman.png';
 import Cemilan from '../../../assets/images/cemilan.png';
 import CekWarungTerdekat from '../../../component/card-cek-warung-terdekat';
+import { useRouter } from 'expo-router';
 
 const Index = () => {
   const { width, height } = Dimensions.get('screen')
   const inset = useSafeAreaInsets()
+  const route = useRouter()
 
   const data = [
-    { id: '1', title: 'Makanan', picture: Makanan },
-    { id: '2', title: 'Minuman', picture: Minuman },
-    { id: '3', title: 'Cemilan', picture: Cemilan },
+    { id: '1', title: 'Makanan', picture: Makanan, url:'semua-makanan-screen' },
+    { id: '2', title: 'Minuman', picture: Minuman, url:'semua-minuman-screen' },
+    { id: '3', title: 'Cemilan', picture: Cemilan, url:'semua-cemilan-screen' },
     // Tambah data lainnya
   ];
  
@@ -44,7 +46,7 @@ const Index = () => {
         <Text style={{marginLeft:20, fontFamily:FONTS.SemiBold, color:COLORS.buttondarkBlue}}>Aneka kuliner boven</Text>
         <View style={{width:'100%', height:'auto', flexDirection:'row', justifyContent:'center', paddingVertical:10, gap:8}}>
         {data.map((item) => (
-          <CardMakanan title={item.title} picture={item.picture} key={item.id} />
+          <CardMakanan onPress={() => route.push(item.url)} title={item.title} picture={item.picture} key={item.id} />
         ))}
         </View>
       </View>
